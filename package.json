@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme",
   "devDependencies": {
+    "eslint": "^7.22.0",
     "prettier": "^2.2.1"
   }
 }
