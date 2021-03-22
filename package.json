@@ -2,6 +2,21 @@
   "name": "webpack-image-loader-as-react-component",
   "version": "1.0.0",
   "description": "A webpack loader that imports images as react components.",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rnarcos/webpack-image-loader-as-react-component.git"
@@ -23,16 +38,5 @@
   "bugs": {
     "url": "https://github.com/rnarcos/webpack-image-loader-as-react-component/issues"
   },
-  "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.12.1",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
-  }
+  "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme"
 }
