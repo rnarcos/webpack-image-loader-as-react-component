@@ -1,0 +1,27 @@
+{
+  "name": "webpack-image-loader-as-react-component",
+  "version": "1.0.0",
+  "description": "A webpack loader that imports images as react components.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnarcos/webpack-image-loader-as-react-component.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "react",
+    "react-component",
+    "image",
+    "jsx",
+    "svg",
+    "png",
+    "jpeg",
+    "gif"
+  ],
+  "author": "Marcos Fernandes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rnarcos/webpack-image-loader-as-react-component/issues"
+  },
+  "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme"
+}
