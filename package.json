@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/rnarcos/webpack-image-loader-as-react-component/issues"
   },
-  "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme"
+  "homepage": "https://github.com/rnarcos/webpack-image-loader-as-react-component#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
