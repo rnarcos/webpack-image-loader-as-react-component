@@ -1,0 +1,1 @@
+export { default as generateURI } from './generate-uri.util';
