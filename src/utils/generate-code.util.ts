@@ -32,3 +32,15 @@ export function generateJSXFromFile(
   }
   return generateJSXFromRasterImages();
 }
+
+export function generateFileModule(fileURI: string, jsx: string): string {
+  return `
+    var React = require('react');
+    var imagePath = ${fileURI};
+
+    Object.defineProperty(exports, "__esModule", { value: true });
+
+    exports.default = ${jsx};
+    exports.path = imagePath;
+  `;
+}
