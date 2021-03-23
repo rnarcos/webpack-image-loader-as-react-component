@@ -36,7 +36,7 @@ export function generateJSXFromFile(
 export function generateFileModule(fileURI: string, jsx: string): string {
   return `
     var React = require('react');
-    var imagePath = ${fileURI};
+    var imagePath = ${JSON.stringify(fileURI)};
 
     Object.defineProperty(exports, "__esModule", { value: true });
 
