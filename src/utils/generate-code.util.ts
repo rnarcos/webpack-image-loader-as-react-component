@@ -7,3 +7,13 @@ function generateJSXFromSVG(svg: string): string {
     });
   `;
 }
+
+function generateJSXFromRasterImages(): string {
+  return `
+    (function(props) {
+      var imageProps = Object.assign({}, props, { src: imagePath });
+
+      return <img {...imageProps} />
+    });
+  `;
+}
