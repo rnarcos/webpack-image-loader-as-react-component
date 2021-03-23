@@ -1,3 +1,5 @@
+import mime from 'mime';
+
 function generateJSXFromSVG(svg: string): string {
   const svgWithProps = svg.replace(/<svg(.*?)>/, '<svg$1 {...props}>');
 
@@ -16,4 +18,17 @@ function generateJSXFromRasterImages(): string {
       return <img {...imageProps} />
     });
   `;
+}
+
+export function generateJSXFromFile(
+  fileBuffer: Buffer,
+  filePath: string,
+): string {
+  const fileMimeType = mime.getType(filePath) ?? '';
+  const fileExtension = mime.getExtension(fileMimeType);
+
+  if (fileExtension === 'svg') {
+    return generateJSXFromSVG(fileBuffer.toString('utf-8'));
+  }
+  return generateJSXFromRasterImages();
 }
