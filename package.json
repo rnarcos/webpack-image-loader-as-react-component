@@ -7,14 +7,14 @@
     "build": "tsc"
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
     "mime": "^2.5.2"
   },
   "devDependencies": {
-    "@types/babel-core": "^6.25.6",
+    "@types/babel__core": "^7.1.14",
     "@types/mime": "^2.0.3",
     "@types/webpack": "^4.41.26",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
