@@ -1,11 +1,13 @@
 import mime from 'mime';
+import HTMLtoJSX from 'htmltojsx';
 
-function generateJSXFromSVG(svg: string): string {
-  const svgWithProps = svg.replace(/<svg(.*?)>/, '<svg$1 {...props}>');
+function generateJSXFromSVG(SVG: string): string {
+  const parsedSVG = new HTMLtoJSX({ createClass: false }).convert(SVG);
 
+  const SVGWithProps = parsedSVG.replace(/<svg(.*?)>/, '<svg$1 {...props}>');
   return `
     (function(props) {
-      return ${svgWithProps};
+      return ${SVGWithProps};
     });
   `;
 }
