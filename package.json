@@ -1,10 +1,13 @@
 {
   "name": "webpack-image-loader-as-react-component",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A webpack loader that imports images as react components.",
   "author": "Marcos Fernandes",
   "license": "MIT",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc"
