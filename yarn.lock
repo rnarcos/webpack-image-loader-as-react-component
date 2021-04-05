@@ -965,6 +965,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/htmltojsx@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/htmltojsx/-/htmltojsx-0.0.29.tgz#9b3866fd5cd28f665e9eea5a8be4a40d754faab6"
+  integrity sha1-mzhm/VzSj2Zenupai+SkDXVPqrY=
+
 "@types/json-schema@^7.0.3":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
