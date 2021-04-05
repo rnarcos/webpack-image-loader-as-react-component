@@ -1,10 +1,13 @@
 {
   "name": "webpack-image-loader-as-react-component",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A webpack loader that imports images as react components.",
   "author": "Marcos Fernandes",
   "license": "MIT",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc"
@@ -14,10 +17,12 @@
     "@babel/plugin-syntax-jsx": "^7.12.13",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.12.13",
+    "htmltojsx": "^0.3.0",
     "mime": "^2.5.2"
   },
   "devDependencies": {
     "@types/babel__core": "^7.1.14",
+    "@types/htmltojsx": "^0.0.29",
     "@types/mime": "^2.0.3",
     "@types/webpack": "^4.41.26",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
